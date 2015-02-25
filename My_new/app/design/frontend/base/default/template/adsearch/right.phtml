@@ -1,0 +1,61 @@
+<div class="block block-cart">
+ <div class="block-title" >
+  <strong><p style="font-size: 15px;">Расширенный поиск</p></strong>
+ </div>
+ <div class="block-content">
+  <form action="<?php echo $this->getUrl('catalogsearch/advanced/result'); ?>" method="get" id="form-validate">
+  <div style="margin-left:5px;font-size: 12px;">  
+    Поиск по автомобилю:
+    <ul>
+      <li style="margin-top:2px;">
+        <label for="car">Автомобиль</label>
+        <select name="car" id="car">
+         <option>BMW</option>
+         <option>Mercedes-Benz</option>
+         <option>Lada</option>
+        </select>
+       </li>
+       <li style="margin-top:2px;">
+        <label for="model">Модель</label>
+        <select name="model" id="model">
+         <option>BMW</option>
+         <option>Mercedes-Benz</option>
+         <option>Lada</option>
+        </select>
+       </li>
+       <li style="margin-top:2px;">
+        <label for="year">Год выпуска</label>
+        <select name="year" id="year">
+         <option>1999</option>
+         <option>2000</option>
+         <option>2001</option>
+        </select>
+       </li>
+       <li style="margin-top:5px;">
+        <input name="radio" id="alternator" type="radio">Генератор</input>&nbsp;
+        <input name="radio" id="starter" type="radio">Стартер</input>&nbsp;
+        </li>
+        <li style="margin-top:2px;">
+        <input name="radio" id="compr" type="radio">Компрессор</input>&nbsp;
+        <input name="radio" id="tcompr" type="radio">Турбина</input>&nbsp;
+      </li>
+    </ul>
+
+
+   <br>
+   Поиск по номеру:
+   <ul>
+     <li>
+      <div style="float:left;width=735px;">
+       <label for="oem">OEM номер</label>
+       <input name="oem" id="oem" type="text" style="width:100px;"></input>
+      </div>
+     </li>
+     <li>
+      <div style="float:left;width=735px; margin-top:5px;">
+        <input name="find" id="find" type="submit" value="ПОИСК" style="width:80px;height:25px"></input>
+      </div>
+     </li>
+   </ul>
+ </div>
+</form>

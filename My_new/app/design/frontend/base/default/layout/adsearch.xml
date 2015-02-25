@@ -1,0 +1,15 @@
+<?xml version="1.0"?>   
+<layout version="0.1.0">   
+  <adsearch_index_index>   
+    <reference name="root">   
+      <action method="setTemplate"><template>page/3columns.phtml</template></action>   
+    </reference>
+    <reference name="right">   
+      <block type="adsearch/right" name="adsearch_right" template="adsearch/right.phtml"/>   
+    </reference>   
+    <reference name="content">   
+      <block type="adsearch/index" name="adsearch_index" template="adsearch/index.phtml"/>   
+    </reference>   
+  </adsearch_index_index>   
+</layout>   
+	

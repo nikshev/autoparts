@@ -1,0 +1,60 @@
+
+
+<div class="page-title">
+ <h1>Расширенный поиск</h1>
+</div>
+<div style="border:1px solid; width=735px; min-height:180px;">
+ <div style="width=735px;margin-left:5px;">
+    Поиск по автомобилю:
+   <ul>
+     <li>
+      <div style="float:left;">
+       <label for="car">Автомобиль</label>
+       <select name="car" id="car">
+        <?php echo $this->getAllManufacturers(); ?>
+       </select>
+      </div>
+      <div style="float:left;margin-left:10px;">
+       <label for="model">Модель</label>
+       <select name="model" id="model">
+        <option value="">Выберите модель</option>
+       </select>
+      </div>
+      <div style="float:left;margin-left:10px;">
+       <label for="year">Год выпуска</label>
+       <select name="year" id="year">
+        <option value="">Выберите год</option>
+       </select>
+      </div>
+     </li>
+     <li>
+      <div style="float:left; width:735px;margin-top:5px;">
+        <input name="radio" id="alternator" type="radio">Генератор</input>&nbsp;
+        <input name="radio" id="starter" type="radio">Стартер</input>&nbsp;
+        <input name="radio" id="compr" type="radio">Компрессор кондиционера</input>&nbsp;
+        <input name="radio" id="tcompr" type="radio">Турбина</input>&nbsp;
+      </div>
+    </li>
+   </ul>
+ </div>
+
+ <div style="width=735px;margin-top:20px;margin-left:5px;">
+   <br><br>
+   Поиск по номеру:
+   <ul>
+     <li>
+      <div style="float:left;width=735px;">
+       <label for="oem">OEM номер</label>
+       <input name="oem" id="oem" type="text" style="width:500px;"></input>
+      </div>
+     </li>
+     <li>
+      <div style="float:left;width=735px; margin-top:5px;">
+        <input name="find" id="find" type="submit" value="ПОИСК" style="width:80px;height:25px"></input>
+      </div>
+     </li>
+   </ul>
+ </div> 
+</div>
+<div id="search" style="width=735px;margin-top:20px;margin-left:5px;">
+</div>

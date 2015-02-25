@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<config>
+  <modules>
+    <Eugene_AdSearch>
+      <active>true</active>
+      <codePool>local</codePool>
+      <version>0.1.0</version>
+    </Eugene_AdSearch>
+  </modules>
+</config>
